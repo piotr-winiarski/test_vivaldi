@@ -303,7 +303,9 @@ function loadMapScreen () {
     clearScreen()
     scene.setBackgroundColor(7)
     tiles.setTilemap(tilemap`level2`)
-    createPlayer()
+    for (let index = 0; index < 4; index++) {
+        createPlayer()
+    }
 }
 let sprite_PLAYER: Sprite = null
 let global_playerPosition: Sprite = null
