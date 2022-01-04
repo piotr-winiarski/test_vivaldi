@@ -132,7 +132,6 @@ controller.A.onEvent(ControllerButtonEvent.Released, function () {
         let int_currentScreen = 0
         if (int_currentScreen == 0) {
             effects.blizzard.endScreenEffect()
-            loadMapScreen()
         }
     }
 })
