@@ -125,6 +125,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ................................................................................................................................................................
         ................................................................................................................................................................
         `)
+    game.showLongText("https://arcade.makecode.com/#editor", DialogLayout.Bottom)
 })
 let mySprite: Sprite = null
 scene.setBackgroundImage(img`
