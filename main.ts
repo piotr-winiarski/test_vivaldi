@@ -267,8 +267,8 @@ function loadMenuScreen () {
 }
 function destroyPlayer () {
     global_playerPosition.x = sprite_PLAYER.x
-    global_playerPosition.y = sprite_PLAYER.y
     sprite_PLAYER.destroy()
+    global_playerPosition.y = sprite_PLAYER.y
 }
 function createPlayer () {
     sprite_PLAYER = sprites.create(img`
