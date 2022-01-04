@@ -305,6 +305,9 @@ function loadMapScreen () {
     for (let index = 0; index < 4; index++) {
         createPlayer()
     }
+    for (let value of tiles.getTilesByType(assets.tile`transparency16`)) {
+        tiles.placeOnRandomTile(value, assets.tile`transparency16`)
+    }
 }
 let sprite_PLAYER: Sprite = null
 let global_playerPosition: Sprite = null
@@ -332,9 +335,3 @@ global_playerPosition = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.data)
 loadMenuScreen()
-forever(function () {
-    for (let value of tiles.getTilesByType(assets.tile`transparency16`)) {
-        let mySprite: Sprite = null
-        tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
-    }
-})
