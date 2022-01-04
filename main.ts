@@ -334,6 +334,7 @@ global_playerPosition = sprites.create(img`
 loadMenuScreen()
 forever(function () {
     for (let value of tiles.getTilesByType(assets.tile`transparency16`)) {
-    	
+        let mySprite: Sprite = null
+        tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
     }
 })
