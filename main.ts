@@ -332,3 +332,8 @@ global_playerPosition = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.data)
 loadMenuScreen()
+forever(function () {
+    for (let value of tiles.getTilesByType(assets.tile`transparency16`)) {
+    	
+    }
+})
